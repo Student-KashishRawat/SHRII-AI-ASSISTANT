@@ -1,4 +1,4 @@
-// Created By: Prince
+// Created By: Kashish
 const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 
