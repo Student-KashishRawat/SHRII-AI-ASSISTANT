@@ -34,7 +34,7 @@
 }
 
 .main .image-container h1 {
-    color: #00bcd4;
+    color: rgb(237, 138, 216);;
     text-align: center;
     margin-bottom: 10px;
     font-size: 40px;
@@ -53,7 +53,7 @@
     width: 40vw;
     height: 50px;
     border-radius: 20px;
-    background: rgb(202 253 255 / 50%);
+    background: linear-gradient(to right,rgb(163, 65, 238),rgb(199, 52, 123));;
 }
 
 .main .input .talk {
@@ -71,11 +71,11 @@
 
 .main .input .talk i {
     font-size: 20px;
-    color: #aed0d0;
+    color: rgb(207, 158, 188);
 }
 
 .main .input .content {
-    color: #aed0d0;
+    color: rgb(207, 158, 188);
     font-size: 15px;
     margin-right: 20px;
 }

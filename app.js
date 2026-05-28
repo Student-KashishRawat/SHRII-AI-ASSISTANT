@@ -8,6 +8,7 @@ function speak(text) {
     text_speak.rate = 1;
     text_speak.volume = 1;
     text_speak.pitch = 1;
+    text_speak.lang = "en-GB";
 
     window.speechSynthesis.speak(text_speak);
 }
@@ -17,19 +18,19 @@ function wishMe() {
     var hour = day.getHours();
 
     if (hour >= 0 && hour < 12) {
-        speak("Good Morning Boss...");
+        speak("A Very Good Morning To You ");
         speak("How may I help you?")
     } else if (hour >= 12 && hour < 17) {
-        speak("Good Afternoon Sir...");
+        speak("A very Good Afternoon to You");
         speak("How may I help you?")
     } else {
-        speak("Good Evening Sir...");
+        speak("a Very good evening to You ");
         speak("How may I help you?")
     }
 }
 
 window.addEventListener('load', () => {
-    speak("Initializing JARVIS...");
+    speak("Initializing SHRII... , Hey this is Shrii , Your Personal Assistant");
     wishMe();
 });
 
@@ -50,9 +51,9 @@ btn.addEventListener('click', () => {
 
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
-        speak("Hello Sir, How May I Help You?");
+        speak("Hey hi, How May I Help You?");
     } else if (message.includes('who am i?') || message.includes('who is your master?') ||  message.includes("who created you?")) {
-        speak("You are Prince,my master, who created me.");      
+        speak("You are Kashi who created me ");      
     } else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
